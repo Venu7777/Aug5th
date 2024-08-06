@@ -1,0 +1,28 @@
+class ChessPiece:
+    def __init__(self, color, symbol):
+        self.color = color
+        self.symbol = symbol
+
+    def __str__(self):
+        return self.symbol
+
+class ChessBoard:
+    def __init__(self):
+        self.board = self.create_board()
+
+    def create_board(self):
+        # Initialize an 8x8 board with None
+        board = [[None for _ in range(8)] for _ in range(8)]
+
+        # Place pawns
+        for i in range(8):
+            board[1][i] = ChessPiece('white', 'P')
+            board[6][i] = ChessPiece('black', 'p')
+
+        # Place other pieces
+        pieces = ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+        for i, piece in enumerate(pieces):
+            board[0][i] = ChessPiece('white', piece)
+ard[7][i] = ChessPiec
+
+
