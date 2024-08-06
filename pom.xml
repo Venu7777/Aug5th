@@ -1,3 +1,4 @@
+
 class ChessPiece:
     def __init__(self, color, symbol):
         self.color = color
@@ -15,6 +16,8 @@ class ChessBoard:
         board = [[None for _ in range(8)] for _ in range(8)]
 
         # Place pawns
+
+ # Place  hotfix
         for i in range(8):
             board[1][i] = ChessPiece('white', 'P')
             board[6][i] = ChessPiece('black', 'p')
@@ -23,6 +26,9 @@ class ChessBoard:
         pieces = ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
         for i, piece in enumerate(pieces):
             board[0][i] = ChessPiece('white', piece)
+
 ard[7][i] = ChessPiec
 
 
+            board[7][i] = ChessPiece('black', piece.lower())
+ hotfix
