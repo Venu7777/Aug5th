@@ -1,0 +1,10 @@
+ # Place pawns
+        for i in range(8):
+            board[1][i] = ChessPiece('white', 'P')
+            board[6][i] = ChessPiece('black', 'p')
+
+        # Place other pieces
+        pieces = ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+        for i, piece in enumerate(pieces):
+            board[0][i] = ChessPiece('white', piece)
+            board[7][i] = ChessPiece('black', piece.lower())
