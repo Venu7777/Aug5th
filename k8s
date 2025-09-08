@@ -1,1 +1,3 @@
 This is a deployment yaml
+
+I have kept 3 replicas to my cluster
